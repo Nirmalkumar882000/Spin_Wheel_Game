@@ -1,0 +1,35 @@
+/* Progress bar design  */
+
+
+  
+  .progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 20px;
+    width: 800px;   
+  }
+  
+  .progress-value {
+    animation: load 10s normal forwards;
+    border: 3px solid #fff;
+    box-shadow: 8px 6px 8px 3px orange;
+    border-radius: 100px;
+    background: orange;
+    height: 15px;
+    width: 0;
+  }
+
+  @keyframes shine {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 50px; }
+  }
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }

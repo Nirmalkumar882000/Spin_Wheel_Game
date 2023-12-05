@@ -1,0 +1,44 @@
+/* .content{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}   */
+
+
+/* Volume setting design  */
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 250px;
+    height: 40px !important;
+    outline: none;
+    overflow: hidden;
+    border: 5px solid #2F1201  ;
+    border-radius: 3px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+
+    -webkit-appearance: none;
+    appearance: none; 
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+    border: 2px solid ;
+    box-shadow: -407px 0 0 400px #70c244;
+  }
+
+  .color{
+    font-weight: 800;
+  }
+
+  .profile{
+    color: #2F1201;
+  }
+
+  .nirmal{
+    /* text-overflow:ell !important; */
+    text-overflow: clip !important;
+  }

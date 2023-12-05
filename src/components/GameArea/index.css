@@ -1,0 +1,24 @@
+
+.letter{
+    font-size: 4px;
+}
+
+.coin {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gold;
+    border: 1px dotted #333;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+
+.board{
+    border-radius: 12px;
+    box-shadow:
+    inset -3px 0 10px #5F2106,
+    -3px 0 10px #5F2106,
+    3px 0 10px #5F2106;
+}

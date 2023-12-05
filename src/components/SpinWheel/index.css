@@ -1,0 +1,215 @@
+
+.praveen{
+  background-color: #fff;
+}
+
+
+
+
+/* coin border design */
+:root {
+    --glow-color: #ffea00;
+  }
+.glowing-btn {
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    border: 0.20em solid var(--glow-color);
+    border-radius: 30em;
+  
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s linear infinite;
+  }
+  
+.glowing-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* opacity: 0.7; */
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+  }
+  
+.glowing-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+  }
+  
+.glowing-btn:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+  }
+
+.glowing-btn:hover:after {
+    opacity: 1;
+  }
+  
+/* @keyframes faulty-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 0.1;
+    }
+    4% {
+      opacity: 0.5;
+    }
+    19% {
+      opacity: 0.5;
+    }
+    21% {
+      opacity: 0.1;
+    }
+    23% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    83% {
+      opacity: 0.4;
+    }
+  
+    87% {
+      opacity: 1;
+    }
+  } */
+@keyframes border-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 1;
+    }
+    4% {
+      opacity: 0.1;
+    }
+  
+    8% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+
+  /* spin wheel border design */
+
+.spinwheel{
+  border-radius:50%;
+  /* box-shadow:
+  inset -5px 0 35px #ffd900,
+  -5px 0 35px #ffd900,
+  5px 0 35px #ffd900; */
+  /* auto rotate animation */
+  /* animation: spin 50s linear infinite;
+  animation-delay: calc(var(--delay) * -1s) */
+  
+}
+/* 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+ /* Congrates  Text style */
+
+
+.win{
+  color: hsl(0, 0%, 0%);
+  font-size: 35px;
+  text-shadow: 0px 11px 10px rgba(81,67,21,0.8);
+}
+
+
+
+/* light  */
+
+.frame {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 yellow;
+  overflow: hidden;
+  /* background: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: rotatex(60deg);
+}
+
+.frame #bulb {
+  width: 25px;
+  fill: #fff35c;
+  filter: drop-shadow(0 0 20px #fff35c);
+  transition: all 0.5s;
+}
+
+.frame #bulb:hover {
+  cursor: pointer;
+  fill: #7E7E7E;
+  filter: drop-shadow(0 0 20px transparent);
+}
+
+.frame #bulb:hover ~ #base {
+  fill: #7E7E7E;
+}
+
+.frame #base {
+  padding-top: 3px;
+  width: 35px;
+  fill: #fff;
+  transition: all 0.5s;
+}
+
+
+/*Arrow Icons  */
+
+.arrowIcon{
+
+ margin-left: 243px;
+ margin-top: -360px;
+
+}
+
+
+.text1{
+  color: #fff;
+  font-size: 8px;
+}
+
+
+
+
+
+
+

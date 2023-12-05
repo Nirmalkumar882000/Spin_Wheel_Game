@@ -1,0 +1,45 @@
+#tsparticles {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+.fru{
+  top :15px !important;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100vw; 
+  /* bottom: 30px !important; */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} 
+
+.spinintro{
+  animation: spin 50s linear infinite;
+  animation-delay: calc(var(--delay) * -1s)
+
+
+}
+ 
+
+.load{
+  background-color: #fff;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+
+
+

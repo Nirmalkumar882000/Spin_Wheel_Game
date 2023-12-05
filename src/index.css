@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Gamer";
+    src: url('/fonts/GAMERIA.ttf');
+}
+@font-face {
+  font-family: "spatacular";
+  src: url('/fonts/Sporticular.ttf');
+}
+@font-face {
+  font-family: "easy";
+  src: url('/fonts/easy.ttf');
+}
+
+
+/* Scroll hidden */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
